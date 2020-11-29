@@ -1,4 +1,50 @@
-#container {
-    width: 100%;
-    border: 1px solid black;
+
+#wrapper {   
+    display: grid;
+    justify-content: center;
+    background-color: teal;
+
 }
+#container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 300px;
+    background-image: url('https://lh3.googleusercontent.com/proxy/5sPFAYwaomyjog3CksQdNb3ewxpPARoVc3TupuH9Nlp5jsafU-m481cVcOLDe9UBQ4BcGfXpCWoe1x6klV3Rp32KqOd6ZSkxfMMB4nMUdXkxFi-42p1uOyQIAW9ZFf55');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 15px;
+}
+
+#sliderContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.weightSlider {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+
+#label-container {
+    display: flex;
+    flex-direction: column;
+}
+.text {
+    color: rgb(0, 0, 0);
+    background-color: white;
+    width: fit-content;
+    margin: 10px;
+    border-radius: 20px;
+    display: block;
+}
+
+
