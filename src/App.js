@@ -3,9 +3,9 @@ import './App.css';
 import VolumeDisplay from './Components/VolumeDisplay';
 
 function App() {
-  const [weight, setWeight] = useState();
+  const [weight, setWeight] = useState(165);
   const [experience, setExperience] = useState('beginner');
-  const [volume, setVolume] = useState();
+  const [volume, setVolume] = useState('');
 
   // records weight value
   const handleWeight = (val) => {
@@ -54,7 +54,7 @@ function App() {
 
 
   return (
-    <div>
+    <div id='wrapper'>
       <VolumeDisplay 
         handleExperience={handleExperience}
         handleClick={handleClick}
