@@ -1,11 +1,15 @@
+html { 
+    background-image: url('https://i.pinimg.com/originals/91/d6/5b/91d65b94931fd89b7c8243a3b12b497c.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
 body,
 html,
 #root {
-    height: 100%;
-    width: 100%;
-    
+    height: 99%;
+    font-family: cursive;
 }
-
 #root {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -16,24 +20,73 @@ html,
     justify-content: center;
     justify-items: center;
     align-items: center;
-    background-color: rgb(9, 51, 51);
-    background-attachment: fixed;
-    background-image: url('https://i.pinimg.com/originals/91/d6/5b/91d65b94931fd89b7c8243a3b12b497c.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+}
+/* Heading */
+header {
+    grid-area: header;
+    align-self: start;
+    font-family: 'Major Mono Display', monospace;
+    text-align: center;
+    position: sticky;
+    top: .5rem;
+}
+header h2 {
+    font-size: 32px;
+    text-decoration: underline;
+}
+header p {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: whitesmoke;
 }
 
+
+
+/* info section */
+
+#info {
+    grid-area: info;
+    display: flex;
+    flex-direction: column;
+}
+#info h6 {
+    display: inline;
+    text-align: center;
+    font-size: 24px;
+    margin: 1.5rem 0 15px 0;
+}
+#info h2 {
+    margin-bottom: 0;
+}
+#info ul {
+    list-style: none;
+    margin-top: 0;
+}
+span {
+    font-weight: 700;
+    text-decoration: 2px solid underline black;
+}
+.skills-text {
+    font-weight: 700;
+}
+.skills-title {
+    font-size: 20px;
+}
+#info li {
+    font-family: 'Quicksand', sans-serif;
+}
+
+
+/* calculator box */
 #container {
     grid-area: box;
     width: 500px;
     height: 300px;
     border-radius: 15px;
-    margin-bottom: 2rem;
-    margin-right: 1rem;
+    margin: .5rem 1rem .5rem 0;
     justify-self: center;
 }
-
 #display {
     border: 2px solid black;
     padding: 15px;
@@ -44,34 +97,14 @@ html,
     align-self: flex-end;
     align-items: center;
 }
-
-#info {
-    grid-area: info;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    align-self: flex-start;
-}
-#info h2 {
-    grid-area: header;
-    justify-self: start;
-}
-
-#info ul {
-    list-style: none;
-}
-
-span {
-    font-weight: 700;
-    text-decoration: 2px solid underline black;
-}
-
 label {
     background-color: white;
     padding: 3px;
+    margin-bottom: .5rem;
     border-radius: 5px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
 }
-
 #sliderContainer {
     display: flex;
     flex-direction: column;
@@ -80,25 +113,20 @@ label {
     text-align: center;
     margin-bottom: 20px;
 }
-
 .weightSlider {
     display: flex;
     flex-direction: column;
     width: 300px;
 }
-
-
 #label-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-#experience-level {
-    width: 100px;
-}
 .text {
     color: rgb(0, 0, 0);
+    font-family: 'Quicksand', sans-serif;
     background: linear-gradient(to right, #67b26b, #4ca2cb);
     width: fit-content;
     padding: 20px;
@@ -111,6 +139,15 @@ label {
     padding: 10px;
     border-radius: 10px;
 }
+
+
+/* select dropdown */
+.experience-select {
+    width: 200px;
+    position: relative;
+    font-family: Arial;
+} 
+
 
 /* button */
 #calculate-button {
