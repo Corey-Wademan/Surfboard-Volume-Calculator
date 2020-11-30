@@ -19,8 +19,8 @@ function App() {
   // calculates volume range based off weight and experience levels - converted into kg from pounds
   const calcTotal = () => {
     if (experience === 'beginner') {
-      const value1 = (weight / 2.2) * .80;
-      const value2 = (weight / 2.2) * 1;
+      const value1 = (weight / 2.2) * .75;
+      const value2 = (weight / 2.2) * .86;
 
       const total = `${value1.toFixed(2)} - ${value2.toFixed(2)} Liters`;
       return total
@@ -54,7 +54,17 @@ function App() {
 
 
   return (
-    <div id='wrapper'>
+    <>
+      <div id='info'>
+        <h2>Reccomended Surboard Volume Calculator</h2>
+        <p>Select your weight and skill level. Skill levels are based off: </p>
+        <ul>
+          <li><span>Beginner:</span> </li>
+          <li><span>Intermediate:</span> </li>
+          <li><span>Advanced:</span> </li>
+        </ul>
+
+      </div>
       <VolumeDisplay 
         handleExperience={handleExperience}
         handleClick={handleClick}
@@ -63,7 +73,7 @@ function App() {
         experience={experience}
         total={volume}
       />
-    </div>
+    </>
   );
 }
 
