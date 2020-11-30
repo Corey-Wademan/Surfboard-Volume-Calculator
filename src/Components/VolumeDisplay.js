@@ -15,7 +15,7 @@ const VolumeDisplay = (props) => {
 
                 <div id='label-container'>
                     <label for='experience-level' >Skill Level:</label>
-                    <select value={props.experience} onChange={props.handleExperience} name='experience-level' id='experience-level'>
+                    <select value={props.experience} onChange={props.handleExperience} name='experience-level' class='experience-select'>
                         <option id='option1' value='beginner'>Beginner</option>
                         <option id='option2' value='intermediate'>Intermediate</option>
                         <option id='option3' value='advanced'>Advanced</option>
@@ -23,7 +23,7 @@ const VolumeDisplay = (props) => {
                 </div>
                 
                 <button id='calculate-button' onClick={props.handleClick}>Calculate Volume</button>
-                <h2 id='result'>{props.total}</h2>
+                {!props.total ? <h2></h2> : <h2 id='result'>{props.total}</h2>}
             </div>
         </div>
     )
