@@ -55,13 +55,33 @@ function App() {
 
   return (
     <>
+      <header>
+        <h2 id='title'>Surfboard Volume Calculator</h2>
+        <p>Find your ideal volume range below based on your weight and skill level</p>
+      </header>
+      
+      
       <div id='info'>
-        <h2>Reccomended Surboard Volume Calculator</h2>
-        <p>Select your weight and skill level. Skill levels are based off: </p>
+        <h6>Skill levels are determined by: </h6>
         <ul>
-          <li><span>Beginner:</span> </li>
-          <li><span>Intermediate:</span> </li>
-          <li><span>Advanced:</span> </li>
+          <li class='skills-title'><span>Beginner: </span></li>
+            <ul class='skills-text'>
+              <li>-Focusing on selecting waves</li>
+              <li>-Able to stand up 20% of the time</li>
+              <li>-Transitioning from catching waves in the white water to unbroken waves</li>
+            </ul> 
+          <li class='skills-title'><span>Intermediate:</span></li>
+            <ul class='skills-text'>
+              <li>-Consistently catching waves unassisted</li>
+              <li>-Comfortable preforming smooth cutbacks and turns focusing on flow and speed</li>
+              <li>-Can confidently take off frontside / backside and trim effectively down the line</li>
+            </ul>
+          <li class='skills-title'><span>Advanced:</span> </li>
+            <ul class='skills-text'>
+              <li>-Preforming manuevers in the critical parts of the wave</li>
+              <li>-Progressing towards making majority of tube rides and focusing on pocket surfing</li>
+              <li>-Attemping airs</li>
+            </ul>
         </ul>
 
       </div>
