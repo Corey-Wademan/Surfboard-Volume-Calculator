@@ -23,7 +23,7 @@ const VolumeDisplay = (props) => {
                 </div>
                 
                 <button id='calculate-button' onClick={props.handleClick}>Calculate Volume</button>
-                {!props.total ? <h2></h2> : <h2 id='result'>{props.total}</h2>}
+                {!props.total ? <></> : <h2 id='result'>{props.total}</h2>}
             </div>
         </div>
     )
