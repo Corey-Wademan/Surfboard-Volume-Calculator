@@ -20,6 +20,21 @@ const VolumeDisplay = (props) => {
                         <option id='option2' value='intermediate'>Intermediate</option>
                         <option id='option3' value='advanced'>Advanced</option>
                     </select>
+
+                    <label for='wave-type' >Wave Type:</label>
+                    <select value={props.waveType} onChange={props.handleWave} name='wave-type' className='wave-select'>
+                        <option id='option1' value='hollow'>Hollow</option>
+                        <option id='option2' value='crumbly'>Crumbly</option>
+                        <option id='option3' value='mushy'>Mushy | Fat | Deep</option>
+                    </select>
+
+                    <label for='wave-size' >Wave Size:</label>
+                    <select value={props.waveSize} onChange={props.handleSize} name='wave-size' className='waveSize-select'>
+                        <option id='option1' value='waist-chest'>Waist - Chest High</option>
+                        <option id='option2' value='chest-head'>Chest - Head High</option>
+                        <option id='option3' value='overhead'>Overhead</option>
+                        <option id='option4' value='2xoverhead'>2x Overhead </option>
+                    </select>
                 </div>
                 
                 <button id='calculate-button' onClick={props.handleClick}>Calculate Volume</button>
