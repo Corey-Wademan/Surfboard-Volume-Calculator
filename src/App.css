@@ -51,6 +51,7 @@ header p {
     grid-area: info;
     display: flex;
     flex-direction: column;
+    margin: 0 10px;
 }
 #info h6 {
     display: inline;
