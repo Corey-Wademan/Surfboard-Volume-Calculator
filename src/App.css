@@ -3,6 +3,8 @@ html {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    width: 100vw;
+    overflow-x:hidden;
 }
 body,
 html,
@@ -31,13 +33,13 @@ header {
     top: .5rem;
 }
 header h2 {
-    font-size: 32px;
+    font-size: 2em;
     text-decoration: underline;
 }
 header p {
     font-family: 'Quicksand', sans-serif;
     font-weight: 700;
-    font-size: 1.2rem;
+    font-size: 1.5em;
     color: whitesmoke;
 }
 
@@ -53,7 +55,7 @@ header p {
 #info h6 {
     display: inline;
     text-align: center;
-    font-size: 24px;
+    font-size: 1.5em;
     margin: 1.5rem 0 15px 0;
 }
 #info h2 {
@@ -64,6 +66,7 @@ header p {
     margin-top: 0;
 }
 span {
+    font-size: 2vw;
     font-weight: 700;
     text-decoration: 2px solid underline black;
 }
@@ -75,14 +78,15 @@ span {
 }
 #info li {
     font-family: 'Quicksand', sans-serif;
+    font-size: 1.2rem;
 }
 
 
 /* calculator box */
 #container {
     grid-area: box;
-    width: 500px;
-    height: 300px;
+    width: 90%;
+    height: auto;
     border-radius: 15px;
     margin: .5rem 1rem .5rem 0;
     justify-self: center;
@@ -99,8 +103,8 @@ span {
 }
 label {
     background-color: white;
-    padding: 3px;
-    margin-bottom: .5rem;
+    padding: 10px;
+    margin: .5rem 0;
     border-radius: 5px;
     font-family: 'Quicksand', sans-serif;
     font-weight: bold;
@@ -157,7 +161,7 @@ label {
     color: #FFFFFF;
     text-align: center;
     text-transform: uppercase;
-    font-size: 16px;
+    font-size: 1em;
     padding: 10px;
     width: 200px;
     transition: all 0.4s;
@@ -165,4 +169,37 @@ label {
     margin: 5px;
 }
 
+                                            /*---Media Queries---*/
 
+@media (max-width:1024px ) {
+    html {
+        background-size: auto;
+        background-attachment: initial;
+        background-position: top;
+        font-size: 2.3vw;
+    }
+    #root {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas: 
+        'header'
+        'info'
+        'box';
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+    }
+    header {
+        position: relative;
+    }
+    #info ul {
+        color: floralwhite;
+    }
+    span {
+        text-decoration: 2px solid underline floralwhite;
+    }
+    @media (max-width: 768px) {
+
+    }
+}
