@@ -160,21 +160,21 @@ function App() {
         <ul>
           <li className='skills-title'><span>Beginner: </span></li>
             <ul className='skills-text'>
-              <li>Focusing on selecting waves</li>
-              <li>Able to stand up 20% of the time</li>
-              <li>Transitioning from catching waves in the white water to unbroken waves</li>
+              <li>-Focusing on selecting waves</li>
+              <li>-Able to stand up 20% of the time</li>
+              <li>-Transitioning from catching waves in the white water to unbroken waves</li>
             </ul> 
           <li className='skills-title'><span>Intermediate:</span></li>
             <ul className='skills-text'>
-              <li>Consistently catching waves unassisted</li>
-              <li>Attempting turns focusing on flow and speed</li>
-              <li>Can confidently take off frontside / backside and pump effectively down the face of the wave</li>
+              <li>-Consistently catching waves unassisted</li>
+              <li>-Attempting turns focusing on flow and speed</li>
+              <li>-Can confidently take off frontside / backside and pump effectively down the face of the wave</li>
             </ul>
           <li className='skills-title'><span>Advanced:</span> </li>
             <ul className='skills-text'>
-              <li>Preforming manuevers in the critical parts of the wave</li>
-              <li>Progressing towards making majority of tube rides and focusing on pocket surfing</li>
-              <li>Attemping airs</li>
+              <li>-Preforming manuevers in the critical parts of the wave</li>
+              <li>-Progressing towards making majority of tube rides and focusing on pocket surfing</li>
+              <li>-Attemping airs</li>
             </ul>
         </ul>
 
