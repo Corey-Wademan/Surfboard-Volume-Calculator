@@ -1,7 +1,5 @@
 # Surfboard-Volume-Calculator
 
-Board volume calculator that suggests a user a given range of volume to account for when choosing a new board based off of their skill level and weight. Further developments will include more features.
+Surfboard volume calculator that outputs a reccomended volume range for your board based off of their skill level, weight, wave type and wave size.
 
-Three skill Types: Beginner, Intermediate, Advanced. 
-Weight Range: 80 - 250 lbs
-Enjoy 🤙
+🤙
